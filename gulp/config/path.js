@@ -10,9 +10,9 @@ export default {
 		watch: `${srcPath}/**/*.html`,
 	},
 	scss: {
-		src: `${srcPath}/scss/style.{sass,scss}`,
+		src: `${srcPath}/scss/style.scss`,
 		dest: `${destPath}/css/`,
-		watch: `${srcPath}/scss/**/*.{sass,scss}`,
+		watch: `${srcPath}/scss/**/*.scss`,
 	},
 	js: {
 		src: `${srcPath}/js/*.js`,

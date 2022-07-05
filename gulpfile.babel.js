@@ -22,6 +22,8 @@ import img from "./gulp/tasks/img.js";
 import fonts from "./gulp/tasks/fonts.js";
 import server from "./gulp/tasks/server.js";
 
+export { scss }
+
 // watching files
 const watcher = () => {
 	gulp.watch(path.html.watch, html);
@@ -31,7 +33,7 @@ const watcher = () => {
 	gulp.watch(path.fonts.watch, fonts);
 }
 
-const mainTasks = gulp.parallel(html, scss, js, img, fonts);
+const mainTasks = gulp.parallel(fonts, html, scss, js, img);
 
 const build = gulp.series(
 	clear,

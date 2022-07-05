@@ -1,0 +1,91 @@
+@font-face {
+	font-family: 'icomoon';
+	src: url('../../fonts/icon-fonts/icomoon.woff2') format('woff2'),
+		url('../../fonts/icon_fonts/icomoon.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+[class^="icon-"]::before,
+[class*=" icon-"]::before {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'icomoon' !important;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow:before {
+	content: "\e900";
+}
+
+.icon-author:before {
+	content: "\e901";
+}
+
+.icon-calendar:before {
+	content: "\e902";
+}
+
+.icon-card-btn-arrow:before {
+	content: "\e903";
+}
+
+.icon-cart:before {
+	content: "\e904";
+}
+
+.icon-comment:before {
+	content: "\e905";
+}
+
+.icon-email:before {
+	content: "\e906";
+}
+
+.icon-favorite:before {
+	content: "\e907";
+}
+
+.icon-fb:before {
+	content: "\e908";
+}
+
+.icon-instagram:before {
+	content: "\e909";
+}
+
+.icon-linkedin:before {
+	content: "\e90a";
+}
+
+.icon-location:before {
+	content: "\e90b";
+}
+
+.icon-service:before {
+	content: "\e90c";
+}
+
+.icon-slider-arrow:before {
+	content: "\e90d";
+}
+
+.icon-swap:before {
+	content: "\e90e";
+}
+
+.icon-twitter:before {
+	content: "\e90f";
+}
+
+.icon-zoom:before {
+	content: "\e910";
+}

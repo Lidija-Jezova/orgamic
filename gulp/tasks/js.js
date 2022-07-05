@@ -1,5 +1,5 @@
 // plugins
-const webpack = require("webpack-stream");
+import webpack from "webpack-stream";
 
 const js = () => {
 	return $.gulp.src($.path.js.src, { sourcemaps: $.app.isDev })

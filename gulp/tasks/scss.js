@@ -1,6 +1,8 @@
 // plugins
-const gp = require("gulp-load-plugins")();
-const sass = require('gulp-sass')(require('sass'));
+import dartSass from 'sass';
+import gulpSass from 'gulp-sass';
+
+const sass = gulpSass(dartSass);
 
 const scss = () => {
 	return $.gulp.src($.path.scss.src, { sourcemaps: $.app.isDev })
@@ -20,7 +22,7 @@ const scss = () => {
 		.pipe($.gulp.dest($.path.scss.dest, { sourcemaps: $.app.isDev }))
 		.pipe($.gp.cleanCss())
 		.pipe($.gp.rename({
-			suffix: ".min"
+			extname: ".min.css"
 		}))
 		.pipe($.gp.size({ title: "main.min.css" }))
 		.pipe($.gulp.dest($.path.scss.dest, { sourcemaps: $.app.isDev }))
