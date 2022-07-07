@@ -6,7 +6,19 @@
 				<a class="header-top__email icon-email" href="mailto:info@webmail.com">info@webmail.com</a>
 			</address>
 			<div class="header-top__options">
-				<a class="header-top__lang-dropdown icon-arrow">English</a>
+				<div class="header-top__lang-menu lang-menu">
+					<div class="lang-menu__selected-lang icon-arrow">
+						English
+					</div>
+					<ul class="lang-menu__list">
+						<li class="lang-menu__item">
+							<a class="lang-menu__link" href="#">Latviešu</a>
+						</li>
+						<li class="lang-menu__item">
+							<a class="lang-menu__link" href="#">Русский</a>
+						</li>
+					</ul>
+				</div>
 				<div class="header-top__socials">
 					<a class="header-top__social icon-fb" href="https://www.facebook.com/"></a>
 					<a class="header-top__social icon-twitter" href="https://www.twitter.com"></a>
@@ -32,11 +44,13 @@
 			</nav>
 			<div class="header__options">
 				<a class="header__login" href="#">Login</a>
-				<div class="header__search header-search">
-					<button class="header-search__button header-option icon-search"></button>
-					<input class="header-search__input"></input>
+				<div class="header__search">
+					<form class="header-search" action="#">
+						<button class="header-search__button header-option icon-search" type="submit"></button>
+						<input class="header-search__input"></input>
+					</form>
 				</div>
-				<a class="header__cart header-option icon-cart"></a>
+				<a class="header__cart header-option icon-cart"><span>0</span></a>
 			</div>
 		</div>
 	</div>
