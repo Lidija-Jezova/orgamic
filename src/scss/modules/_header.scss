@@ -17,20 +17,17 @@
 		justify-content: space-between;
 	}
 
-	// .header__logo
-
-	&__logo {}
-
 	// .header__menu
 
 	&__menu {
 		margin-left: auto;
 	}
 
-	// .header__options
+	// .header__actions
 
-	&__options {
+	&__actions {
 		display: flex;
+		align-items: center;
 		gap: 10px;
 	}
 
@@ -39,18 +36,26 @@
 	&__login {
 		display: inline-block;
 		min-width: 100px;
+		min-height: 40px;
 		padding: 10px 5px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		align-self: start;
+		text-align: center;
 		background-color: $color-brand-1;
 		color: $color-white;
 		font-weight: 600;
 		@include default-transition(background-color);
 
+		@media (max-width:$breakpoint480) {
+			min-width: 70px;
+		}
+
 		&:hover {
 			background-color: $color-hover-2;
 		}
+
 	}
 
 	// .header__search
@@ -69,8 +74,11 @@
 
 	&__container {
 		width: 100%;
+		padding: 5px 15px;
 		display: flex;
+		align-items: center;
 		justify-content: space-between;
+		gap: 10px;
 	}
 
 	// .header-top__info
@@ -83,6 +91,10 @@
 
 		&>*:not(:last-child) {
 			margin-right: 30px;
+
+			@media (max-width: $breakpoint768) {
+				margin-right: 10px;
+			}
 		}
 	}
 
@@ -99,10 +111,21 @@
 			font-size: 16px;
 			color: $color-brand-1;
 			@include default-transition(color);
+
+			@media (max-width: $breakpoint768) {
+				padding: 10px;
+				margin-right: 0;
+			}
 		}
 
 		&:hover::before {
 			color: $color-hover-2;
+		}
+
+		span {
+			@media (max-width: $breakpoint768) {
+				display: none;
+			}
 		}
 	}
 
@@ -110,10 +133,7 @@
 
 	&__options {
 		display: flex;
-
-		&>*:not(:last-child) {
-			margin-right: 30px;
-		}
+		gap: 30px;
 	}
 
 	// .header-top__lang-menu
@@ -125,6 +145,10 @@
 	&__socials {
 		display: flex;
 		gap: 20px;
+
+		@media (max-width: $breakpoint480) {
+			display: none;
+		}
 	}
 
 	// .header-top__social
@@ -141,6 +165,21 @@
 
 		&:hover::before {
 			color: $color-hover-1;
+		}
+	}
+
+	//.header-top__logo
+
+	&__logo {
+		display: none;
+		align-items: center;
+
+		img {
+			width: 100%;
+		}
+
+		@media (max-width: $breakpoint480) {
+			display: flex;
 		}
 	}
 }
@@ -191,7 +230,7 @@
 		@include default-transition(top);
 	}
 
-	&:hover >&__list {
+	&:hover>&__list {
 		opacity: 1;
 		visibility: visible;
 		pointer-events: all;
@@ -252,29 +291,68 @@
 
 	min-height: 100px;
 
+	@media (max-width: $breakpoint768) {
+		min-height: 50px;
+	}
+
+	// .header-body__logo 
+
+	&__logo {
+		@media (max-width:$breakpoint480) {
+			display: none;
+		}
+	}
+
 	// .header-body__container
 
 	&__container {
 		width: 100%;
+		padding: 5px 15px;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+
+		gap: 50px;
+		@media (max-width: $breakpoint992) {
+			gap: 20px;
+		}
+
+		@media (max-width: $breakpoint768) {
+			gap: 10px;
+		}
+	}
+
+	// .header-body__options
+
+	&__options {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 10px;
+
+		@media (max-width: $breakpoint768) {
+			flex-direction: row-reverse;
+		}
 	}
 }
 
 .logo {}
 
 .menu {
-	&:not(:last-child) {
-		margin-right: 50px;
-	}
-
 	// .menu__list
 
 	&__list {
 		display: flex;
 		align-items: center;
-		gap: 30px;
+		flex-wrap: wrap;
+		column-gap: 30px;
+		row-gap: 5;
+
+		@media (max-width: $breakpoint768) {
+			position: absolute;
+			top: -150%;
+		}
 	}
 
 	// .menu__item
@@ -291,6 +369,29 @@
 		&:hover {
 			color: $color-hover-1;
 		}
+	}
+
+	// .menu__toggle
+
+	&__toggle {
+		display: none;
+		width: 40px;
+		height: 40px;
+		padding: 5px 0;
+		flex-direction: column;
+		justify-content: space-between;
+
+		@media (max-width: $breakpoint768) {
+			display: flex;
+		}
+
+		span {
+			display: block;
+			width: 100%;
+			height: 2px;
+			background-color: $color-brand-1;
+		}
+
 	}
 }
 
@@ -314,7 +415,15 @@
 		font-size: 16px;
 		line-height: 40px;
 		background-color: $color-gray-light;
-		@include default-transition(width, 0.5s)
+		@include default-transition(width, 0.5s);
+
+		@media (max-width: $breakpoint768) {
+			opacity: 1;
+			visibility: visible;
+			pointer-events: all;
+			position: relative;
+			width: 100%;
+		}
 	}
 
 	&:hover>&__input {

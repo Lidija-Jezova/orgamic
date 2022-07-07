@@ -2,9 +2,12 @@
 	<div class="header__top header-top">
 		<div class="header-top__container _container">
 			<address class="header-top__info">
-				<div class="header-top__location icon-location">15/A, Nest Tower, NYC</div>
-				<a class="header-top__email icon-email" href="mailto:info@webmail.com">info@webmail.com</a>
+				<div class="header-top__location icon-location"><span>15/A, Nest Tower, NYC</span></div>
+				<a class="header-top__email icon-email" href="mailto:info@webmail.com"><span>info@webmail.com</span></a>
 			</address>
+			<a class="header-top__logo logo" href="#">
+				<img src="../img/logo.svg" alt="Logo">
+			</a>
 			<div class="header-top__options">
 				<div class="header-top__lang-menu lang-menu">
 					<div class="lang-menu__selected-lang icon-arrow" data-lang="eng">
@@ -30,27 +33,34 @@
 	</div>
 	<div class="header__body header-body">
 		<div class="header-body__container _container">
-			<a class="header__logo logo" href="#">
+			<a class="header-body__logo logo" href="#">
 				<img src="../img/logo.svg" alt="Logo">
 			</a>
-			<nav class="header__menu menu">
-				<ul class="menu__list">
-					<li class="menu__item"><a class="menu__link" href="#">Home +</a></li>
-					<li class="menu__item"><a class="menu__link" href="#">About +</a></li>
-					<li class="menu__item"><a class="menu__link" href="#">Shop +</a></li>
-					<li class="menu__item"><a class="menu__link" href="#">Page +</a></li>
-					<li class="menu__item"><a class="menu__link" href="#">Contact +</a></li>
-				</ul>
-			</nav>
-			<div class="header__options">
-				<a class="header__login" href="#">Login</a>
-				<div class="header__search">
-					<form class="header-search" action="#">
-						<button class="header-search__button header-option icon-search" type="submit"></button>
-						<input class="header-search__input"></input>
-					</form>
+			<div class="header-body__options">
+				<nav class="header__menu menu">
+					<ul class="menu__list">
+						<li class="menu__item"><a class="menu__link" href="#">Home +</a></li>
+						<li class="menu__item"><a class="menu__link" href="#">About +</a></li>
+						<li class="menu__item"><a class="menu__link" href="#">Shop +</a></li>
+						<li class="menu__item"><a class="menu__link" href="#">Page +</a></li>
+						<li class="menu__item"><a class="menu__link" href="#">Contact +</a></li>
+					</ul>
+					<button class="menu__toggle">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+				</nav>
+				<div class="header__actions">
+					<a class="header__login" href="#">Login</a>
+					<div class="header__search">
+						<form class="header-search" action="#">
+							<button class="header-search__button header-option icon-search" type="submit"></button>
+							<input class="header-search__input"></input>
+						</form>
+					</div>
+					<a class="header__cart header-option icon-cart"><span>0</span></a>
 				</div>
-				<a class="header__cart header-option icon-cart"><span>0</span></a>
 			</div>
 		</div>
 	</div>
