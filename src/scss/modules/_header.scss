@@ -1,0 +1,242 @@
+.header {
+
+	// .header__top
+
+	&__top {
+		min-height: 50px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border-bottom: 1px solid $color-gray-light;
+	}
+
+	// .header__body
+
+	&__body {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	// .header__logo
+
+	&__logo {}
+
+	// .header__menu
+
+	&__menu {
+		margin-left: auto;
+	}
+
+	// .header__options
+
+	&__options {
+		display: flex;
+		gap: 10px;
+	}
+
+	// .header__login
+
+	&__login {
+		display: inline-block;
+		min-width: 100px;
+		padding: 10px 5px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: $color-brand-1;
+		color: $color-white;
+		font-weight: 600;
+	}
+
+	// .header__search
+
+	&__search {}
+
+	// .header__cart
+
+	&__cart {}
+}
+
+.header-top {
+
+
+	// .header-top__container
+
+	&__container {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	// .header-top__info
+
+	&__info {
+		display: flex;
+		align-items: center;
+		font-size: 13px;
+		font-weight: 500;
+
+		&>*:not(:last-child) {
+			margin-right: 30px;
+		}
+	}
+
+	// .header-top__location
+	// .header-top__email
+
+	&__location,
+	&__email {
+		display: flex;
+		align-items: center;
+
+		&::before {
+			margin-right: 8px;
+			font-size: 16px;
+			color: $color-brand-1;
+			@include default-transition(color);
+		}
+
+		&:hover::before {
+			color: $color-hover-2;
+		}
+	}
+
+	// .header-top__options
+
+	&__options {
+		display: flex;
+
+		&>*:not(:last-child) {
+			margin-right: 30px;
+		}
+	}
+
+	// .header-top__lang-dropdown
+
+	&__lang-dropdown {
+		display: flex;
+		align-items: center;
+		flex-direction: row-reverse;
+		font-size: 13px;
+		cursor: pointer;
+
+		&::before {
+			margin-left: 4px;
+			font-size: 10px;
+			color: $color-brand-1;
+		}
+	}
+
+	// .header-top__socials
+
+	&__socials {
+		display: flex;
+		gap: 20px;
+	}
+
+	// .header-top__social
+
+	&__social {
+		display: flex;
+		align-items: center;
+
+		&::before {
+			font-size: 16px;
+			color: $color-gray-neutral;
+			@include default-transition(color);
+		}
+
+		&:hover::before {
+			color: $color-hover-1;
+		}
+	}
+}
+
+.header-option {
+	width: 40px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: $color-gray-light;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.icon-location {}
+
+.icon-email {}
+
+.icon-arrow {}
+
+.icon-fb {}
+
+.icon-twitter {}
+
+.icon-instagram {}
+
+.icon-linkedin {}
+
+.header-body {
+
+	min-height: 100px;
+
+	// .header-body__container
+
+	&__container {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+.logo {}
+
+.menu {
+	&:not(:last-child) {
+		margin-right: 50px;
+	}
+
+	// .menu__list
+
+	&__list {
+		display: flex;
+		align-items: center;
+		gap: 30px;
+	}
+
+	// .menu__item
+
+	&__item {}
+
+	// .menu__link
+
+	&__link {
+		font-weight: 600;
+		color: $color-black;
+		@include default-transition(color);
+
+		&:hover {
+			color: $color-hover-1;
+		}
+	}
+}
+
+.header-search {
+
+	// .header-search__button
+
+	&__button {
+	}
+
+	// .header-search__input
+
+	&__input {
+		display: none;
+	}
+}
+
+.icon-search {}
+
+.icon-cart {}

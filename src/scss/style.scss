@@ -1,15 +1,5 @@
-@import "./util/*.scss";
-@import "./fonts/*.scss";
-@import "./modules/*.scss";
-
-.font1 {
-	font-family: "Roboto";
-
-}
-
-.font2 {
-	font-family: "Oswald";
-	font-weight: 600;
-	color: rgb(0, 255, 128);
-	width: 800px;
-}
+@import "./variables/variables.scss";
+@import "./mixins.scss";
+@import "./fonts/**/*.scss";
+@import "./util/**/*.scss";
+@import "./modules/**/*.scss";
