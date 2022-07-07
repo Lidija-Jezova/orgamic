@@ -18,8 +18,6 @@ const isWebp = () => {
 			document.querySelector('html').classList.add('no-webp');
 		}
 	});
-
-	console.log("webppp");
 }
 
 module.exports = isWebp;

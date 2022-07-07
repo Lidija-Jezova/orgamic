@@ -191,7 +191,7 @@
 		@include default-transition(top);
 	}
 
-	&:hover.hovered>&__list {
+	&:hover >&__list {
 		opacity: 1;
 		visibility: visible;
 		pointer-events: all;
