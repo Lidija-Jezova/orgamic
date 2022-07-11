@@ -1,5 +1,4 @@
 /* Container & Breakpoints */
-@use "sass:math";
 $containerWidth: 1200;
 $containerPadding: 30;
 $containerSidePadding: math.div($containerPadding, 2);
@@ -28,6 +27,8 @@ $color-title-main: $color-dark;
 $color-text-main: $color-gray-darker;
 $color-btn-main: $color-brand-1;
 $color-social-main: $color-gray-neutral;
+
+$color-organic-bg: rgba(118, 167, 19, 0.3);
 
 $color-hover-1: $color-brand-1;
 $color-hover-2: $color-brand-2;

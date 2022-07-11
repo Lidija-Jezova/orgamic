@@ -15,7 +15,15 @@ export default {
 		verbose: true
 	},
 	webpack: {
-		mode: isProd ? "production" : "development"
+		mode: isProd ? "production" : "development",
+		module: {
+			rules: [
+				{
+					test: /\.css$/i,
+					use: ["style-loader", "css-loader"],
+				},
+			],
+		}
 	},
 	webpCss: {
 		webpClass: ".webp",

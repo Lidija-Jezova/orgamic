@@ -1,4 +1,6 @@
+@use "sass:math";
 @import "./variables/variables.scss";
+@import "./functions";
 @import "./mixins.scss";
 @import "./fonts/**/*.scss";
 @import "./util/**/*.scss";

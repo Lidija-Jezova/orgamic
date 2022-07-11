@@ -1,0 +1,122 @@
+.organic {
+	position: relative;
+	padding: 100px 0 200px;
+	background-color: $color-organic-bg;
+
+	&__container {
+		position: relative;
+	}
+
+	// .organic__item
+
+	&__item {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	// .organic__title
+
+	&__title {
+		font-family: "Oswald";
+		font-size: rem(80px);
+		line-height: math.div(119, 80);
+		font-weight: 500;
+		text-transform: uppercase;
+		color: $color-title-main;
+
+		span {
+			font-size: rem(50px);
+			color: $color-brand-1;
+			display: block;
+		}
+	}
+
+	// .organic__tag
+
+	&__tag {
+		display: block;
+		max-width: 82px;
+		position: absolute;
+		top: 43px;
+		right: 15px;
+		z-index: 1;
+	}
+
+	&__button-prev,
+	&__button-next {
+		width: 40px;
+		height: 40px;
+		border: 1px solid $color-brand-1;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+		background-color: transparent;
+		@include default-transition(background-color);
+
+		&:hover {
+			background-color: $color-brand-1;
+		}
+	}
+
+	// .organic-slider__button-prev
+
+	&__button-prev {
+		left: -55px;
+	}
+
+	// .organic-slider__button-next
+
+	&__button-next {
+		right: -55px;
+		&::before {
+			transform: rotate(180deg);
+		}
+	}
+}
+
+.organic-slider {
+	padding-right: 15px;
+	position: relative;
+	z-index: 2;
+}
+
+.swiper {}
+
+.swiper-wrapper {}
+
+.organic-item {
+
+	// .organic-item__left-side
+
+	&__left-side {
+		flex: 0 1 42%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+
+	// .organic-item__right-side
+
+	&__right-side {
+		margin-right: 15px;
+		flex: 0 1 55%;
+
+		img {
+			width: 100%;
+		}
+	}
+}
+
+.swiper-slide {}
+
+.ogranic-item {
+
+	// .ogranic-item__image
+
+	&__image {}
+}

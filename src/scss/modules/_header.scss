@@ -34,28 +34,12 @@
 	// .header__login
 
 	&__login {
-		display: inline-block;
 		min-width: 100px;
-		min-height: 40px;
-		padding: 10px 5px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
 		align-self: start;
-		text-align: center;
-		background-color: $color-brand-1;
-		color: $color-white;
-		font-weight: 600;
-		@include default-transition(background-color);
 
 		@media (max-width:$breakpoint480) {
 			min-width: 70px;
 		}
-
-		&:hover {
-			background-color: $color-hover-2;
-		}
-
 	}
 
 	// .header__search
