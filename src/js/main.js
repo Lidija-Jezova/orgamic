@@ -6,4 +6,3 @@ import sliders from "./modules/sliders";
 isWebp();
 language();
 burger();
-// sliders();
