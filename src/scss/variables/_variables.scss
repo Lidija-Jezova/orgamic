@@ -2,7 +2,8 @@
 $containerWidth: 1200;
 $containerPadding: 30;
 $containerSidePadding: math.div($containerPadding, 2);
-$breakpoint1400: 1339.98+px;
+$breakpoint1400: 1399.98+px;
+$breakpoint1200: 1199.98+px;
 $breakpoint992: 991.98+px;
 $breakpoint768: 767.98+px;
 $breakpoint480: 479.98+px;
@@ -29,6 +30,7 @@ $color-btn-main: $color-brand-1;
 $color-social-main: $color-gray-neutral;
 
 $color-organic-bg: rgba(118, 167, 19, 0.3);
+$color-border-dashed: rgba(118, 167, 19, 0.5);
 
 $color-hover-1: $color-brand-1;
 $color-hover-2: $color-brand-2;

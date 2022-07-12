@@ -1,0 +1,221 @@
+.experience {
+
+	padding-bottom: 100px;
+
+	@media (max-width: $breakpoint992) {
+		padding-bottom: 50px;
+	}
+
+	@media (max-width: $breakpoint768) {
+		padding-bottom: 30px;
+	}
+
+	// .experience__container
+
+	&__container {}
+
+	// .experience__items
+
+	&__items {
+		display: flex;
+		gap: 30px;
+
+		@media (max-width: $breakpoint992) {
+			flex-direction: column-reverse;
+		}
+	}
+
+	// .experience__visual
+
+	&__visual {
+		display: grid;
+		grid-template-columns: repeat(2, 270px);
+		grid-template-rows: 300px 100px;
+		gap: 30px;
+
+		@media (max-width: $breakpoint768) {
+			grid-template-columns: repeat(2, 1fr);
+			gap: 20px;
+		}
+	}
+
+	// .experience__textual
+
+	&__textual {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+.experience-visual {
+
+	// .experience-visual__img-tall
+
+	&__img-tall {
+		grid-row: span 2;
+		padding-bottom: 50%;
+		overflow: hidden;
+		position: relative;
+
+		
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}
+
+	// .experience-visual__img-short
+
+	&__img-short {
+		padding-bottom: 50%;
+		overflow: hidden;
+		position: relative;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}
+
+	// .experience-visual__years
+
+	&__years {
+		font-family: "Oswald";
+		max-width: 270px;
+		max-height: 100px;
+		padding: 10px 30px;
+		font-size: rem(24px);
+		line-height: math.div(36, 24);
+		letter-spacing: 0.03em;
+		font-weight: 500;
+		text-transform: capitalize;
+		text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: $color-brand-1;
+		grid-column: 2;
+		grid-row: 4 5;
+		border: 1.5px dashed $color-border-dashed;
+
+		@media (max-width: $breakpoint768) {
+			font-size: rem(20px);
+			line-height: 1.2;
+		}
+
+		span {
+			font-size: rem(30px);
+			line-height: math.div(44, 30);
+			font-weight: 600;
+
+			@media (max-width: $breakpoint768) {
+				font-size: rem(24px);
+				line-height: 1.2;
+			}
+		}
+	}
+}
+
+.experience-textual {
+
+	max-width: 570px;
+
+	@media (max-width: $breakpoint992) {
+		max-width: 100%;
+	}
+
+	// .experience-textual__title
+
+	&__title {
+		max-width: 520px;
+	}
+
+	// .experience-textual__text
+
+	&__text {
+		color: $color-gray-darker;
+		line-height: 1.4;
+
+		&:not(:last-child) {
+			margin-bottom: 20px;
+		}
+	}
+
+	// .experience-textual__paragraph
+
+	&__paragraph {}
+
+	// .experience-textual__citation
+
+	&__citation {}
+
+	// .experience-textual__quotation
+
+	&__quotation {
+		max-width: 500px;
+		display: inline-block;
+		color: $color-gray-dark;
+		line-height: 1.4;
+		font-style: italic;
+		font-weight: 400;
+		position: relative;
+
+		&:not(:last-child) {
+			margin-bottom: 15px;
+		}
+
+		&::before {
+			display: none;
+		}
+
+		&::after {
+			content: "";
+			display: block;
+			width: 28px;
+			height: 20px;
+			background: url(../../img/experience/quotation_mark.svg) 0 0/cover no-repeat;
+			position: absolute;
+			bottom: -10%;
+			right: 30%;
+		}
+	}
+
+	// .experience-textual__author
+
+	&__author {
+		&:not(:last-child) {
+			margin-bottom: 30px;
+		}
+	}
+
+	// .experience-textual__author-name
+
+	&__author-name {
+		font-family: "Oswald";
+		font-size: rem(18px);
+		line-height: 1.2;
+		color: $color-black;
+
+		&:not(:last-child) {
+			margin-bottom: 3px;
+		}
+	}
+
+	// .experience-textual__author-position
+
+	&__author-position {
+		font-size: rem(13px);
+		line-height: 1.4;
+		font-weight: 500;
+		color: $color-gray-dark;
+	}
+}

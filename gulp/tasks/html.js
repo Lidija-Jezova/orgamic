@@ -7,7 +7,7 @@ const html = () => {
 			}))
 		}))
 		.pipe($.gp.fileInclude())
-		.pipe($.gp.webpHtml())
+		.pipe($.gp.webpHtmlNosvg())
 		.pipe($.gp.size())
 		.pipe($.gp.htmlmin($.app.htmlmin))
 		.pipe($.gp.size())
@@ -15,5 +15,4 @@ const html = () => {
 		.pipe($.browserSync.stream());
 }
 
-// modele.exports instead of exports for exporting a single function
 export default html;
