@@ -4,6 +4,10 @@
 	background-color: $color-organic-bg;
 
 	@media (max-width: $breakpoint1400) {
+		padding: 70px 0 200px;
+	}
+
+	@media (max-width: $breakpoint992) {
 		padding: 70px 0 100px;
 	}
 
