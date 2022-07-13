@@ -29,6 +29,10 @@
 		display: flex;
 		align-items: center;
 		gap: 10px;
+
+		@media (max-width:$breakpoint768) {
+			
+		}
 	}
 
 	// .header__login
@@ -37,8 +41,10 @@
 		min-width: 100px;
 		align-self: start;
 
+
 		@media (max-width:$breakpoint480) {
 			min-width: 70px;
+			padding: 5px;
 		}
 	}
 
@@ -62,7 +68,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		gap: 10px;
+		gap: 20px;
 
 		@media (max-width:$breakpoint768) {
 			max-height: 46px;
@@ -122,6 +128,10 @@
 	&__options {
 		display: flex;
 		gap: 30px;
+
+		@media (max-width:$breakpoint768) {
+			gap: 20px;
+		}
 	}
 
 	// .header-top__lang-menu
@@ -167,7 +177,7 @@
 			max-height: 35px;
 		}
 
-		@media (max-width: $breakpoint480) {
+		@media (max-width: $breakpoint768) {
 			display: flex;
 		}
 	}
@@ -262,20 +272,6 @@
 	}
 }
 
-.icon-location {}
-
-.icon-email {}
-
-.icon-arrow {}
-
-.icon-fb {}
-
-.icon-twitter {}
-
-.icon-instagram {}
-
-.icon-linkedin {}
-
 .header-body {
 
 	min-height: 100px;
@@ -287,7 +283,7 @@
 	// .header-body__logo 
 
 	&__logo {
-		@media (max-width:$breakpoint480) {
+		@media (max-width:$breakpoint768) {
 			display: none;
 		}
 	}
@@ -327,11 +323,10 @@
 
 		@media (max-width: $breakpoint768) {
 			flex-direction: row-reverse;
+			gap: 10px;
 		}
 	}
 }
-
-.logo {}
 
 .menu {
 	// .menu__list
