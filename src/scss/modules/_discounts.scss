@@ -1,0 +1,113 @@
+.discounts {
+
+	padding-bottom: 100px;
+
+	@media (max-width: $breakpoint992) {
+		padding-bottom: 50px;
+	}
+
+	@media (max-width: $breakpoint768) {
+		padding-bottom: 30px;
+	}
+
+	// .discounts__container
+
+	&__container {}
+
+	// .discounts__items
+
+	&__items {
+		display: flex;
+
+		@media (max-width:$breakpoint768) {
+			flex-wrap: wrap;
+		}
+	}
+
+	// .discounts__item
+
+	&__item {
+		padding: 40px 45px;
+		flex: 1 1 50%;
+		position: relative;
+		background-color: $color-brand-1;
+		overflow: hidden;
+
+		@media (max-width:$breakpoint768) {
+			flex: 1 1 100%;
+		}
+
+		&_orange {
+			background-color: $color-brand-2;
+		}
+	}
+}
+
+.discounts-item {
+
+	// .discounts-item__img
+
+	&__img {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		width: 61%;
+		height: 100%;
+		object-fit: cover;
+
+		@media (max-width:$breakpoint992) {
+			opacity: 0.3;
+			width: 100%;
+		}
+	}
+
+	// .discounts-item__content
+
+	&__content {
+		width: 250px;
+		margin-left: auto;
+		color: $color-white;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		justify-content: center;
+		text-align: right;
+
+		@media (max-width:$breakpoint768) {
+			width: 100%;
+		}
+	}
+
+	// .discounts-item__percent
+
+	&__percent {
+		text-transform: uppercase;
+		font-weight: 600;
+
+		&:not(:last-child) {
+			margin-bottom: 5px;
+		}
+	}
+
+	// .discounts-item__title
+
+	&__title {
+		font-family: "Oswald";
+		font-size: rem(40px);
+		font-weight: 600;
+
+		@media (max-width:$breakpoint768) {
+			font-size: rem(32px);
+		}
+
+		&:not(:last-child) {
+			margin-bottom: 30px;
+		}
+	}
+
+	// .discounts-item__button
+
+	&__button {}
+}
