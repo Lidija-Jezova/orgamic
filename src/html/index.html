@@ -44,7 +44,7 @@
 					</div>
 					<div class="organic__button-prev icon-slider-arrow"></div>
 					<div class="organic__button-next icon-slider-arrow"></div>
-					<div class="organic__dots"></div>
+					<div class="slider-dots organic__dots"></div>
 				</div>
 			</section>
 			<div class="shipping">
@@ -151,7 +151,7 @@
 										farmers who farm onganically.</p>
 								</div>
 								<a class="button button_shop-now categories-card__button" href="#">shop now</a>
-								<a class="categories-card__fake icon-card-btn-arrow" href="#"></a>
+								<a class="arrow categories-card__fake icon-card-btn-arrow" href="#"></a>
 							</div>
 						</div>
 						<div class="categories__item">
@@ -165,7 +165,7 @@
 										farmers who farm onganically.</p>
 								</div>
 								<a class="button button_shop-now categories-card__button" href="#">shop now</a>
-								<a class="categories-card__fake icon-card-btn-arrow" href="#"></a>
+								<a class="arrow categories-card__fake icon-card-btn-arrow" href="#"></a>
 							</div>
 						</div>
 						<div class="categories__item">
@@ -179,7 +179,7 @@
 										farmers who farm onganically.</p>
 								</div>
 								<a class="button button_shop-now categories-card__button" href="#">shop now</a>
-								<a class="categories-card__fake icon-card-btn-arrow" href="#"></a>
+								<a class="arrow categories-card__fake icon-card-btn-arrow" href="#"></a>
 							</div>
 						</div>
 						<div class="categories__item">
@@ -193,7 +193,7 @@
 										farmers who farm onganically.</p>
 								</div>
 								<a class="button button_shop-now categories-card__button" href="#">shop now</a>
-								<a class="categories-card__fake icon-card-btn-arrow" href="#"></a>
+								<a class="arrow categories-card__fake icon-card-btn-arrow" href="#"></a>
 							</div>
 						</div>
 					</div>
@@ -337,7 +337,7 @@
 								<div class="discounts-item__percent">save up to 50%</div>
 								<h3 class="discounts-item__title">THE BLUEPRINT
 									TO HEALTH</h3>
-								<button class="button button_orange button_shop-now discounts-item__button">buy now</button>
+								<a class="button button_orange button_shop-now discounts-item__button" href="#">buy now</a>
 							</div>
 						</div>
 						<div class="discounts__item discounts__item_orange discounts-item">
@@ -346,12 +346,77 @@
 								<div class="discounts-item__percent">save up to 30%</div>
 								<h3 class="discounts-item__title">FRUITS &
 									VEGETABLES</h3>
-								<button class="button button_shop-now discounts-item__button">buy now</button>
+								<a class="button button_shop-now discounts-item__button" href="#">buy now</a>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+			<section class="featured">
+				<div class="featured__container _container">
+					<h2 class="title featured__title">featured products</h2>
+					<div class="featured__slider swiper">
+						<div class="featured__items swiper-wrapper">
+							<div class="product-item featured__item featured-item swiper-slide">
+								<div class="product-item__actions">
+									<a href="#" class="icon-swap"></a>
+									<a href="#" class="icon-favorite"></a>
+									<a href="#" class="icon-zoom"></a>
+								</div>
+								<div class="product-item__img featured-item__img">
+									<img src="../img/featured/pepper.png" alt="pepper">
+								</div>
+								<div class="product-item__content featured-item__content">
+									<h3 class="product-item__title featured-item__title">Red Pepper</h3>
+									<div class="product-item__price featured-item__price"><span></span>$10.00 - $20.00</div>
+									<div class="product-item__star-rating featured-item__star-rating">stars</div>
+									<a class="button button_shop-now" href="#">shop now</a>
+								</div>
+							</div>
+							<div class="product-item featured__item featured-item swiper-slide">
+								<div class="product-item__discount">Off 50%</div>
+								<div class="product-item__actions">
+									<a href="#" class="icon-swap"></a>
+									<a href="#" class="icon-favorite"></a>
+									<a href="#" class="icon-zoom"></a>
+								</div>
+								<div class="product-item__img featured-item__img">
+									<img src="../img/featured/cabbage.png" alt="cabbage">
+								</div>
+								<div class="product-item__content featured-item__content">
+									<h3 class="product-item__title featured-item__title">Cabbage</h3>
+									<div class="product-item__price featured-item__price"><span>$30.00</span> - $15.00</div>
+									<div class="product-item__star-rating featured-item__star-rating">stars</div>
+									<a class="button button_shop-now" href="#">shop now</a>
+								</div>
+							</div>
+							<div class="product-item featured__item featured-item swiper-slide">
+								<div class="product-item__actions">
+									<a href="#" class="icon-swap"></a>
+									<a href="#" class="icon-favorite"></a>
+									<a href="#" class="icon-zoom"></a>
+								</div>
+								<div class="product-item__img featured-item__img">
+									<img src="../img/featured/tomato.png" alt="tomato">
+								</div>
+								<div class="product-item__content featured-item__content">
+									<h3 class="product-item__title featured-item__title">Tomato</h3>
+									<div class="product-item__price featured-item__price"><span></span>$15.00</div>
+									<div class="product-item__star-rating featured-item__star-rating">stars</div>
+									<a class="button button_shop-now" href="#">shop now</a>
+								</div>
+							</div>
+						</div>
+						<div class="featured-slider__actions">
+							<div class="slider-dots featured-slider__dots"></div>
+							<div class="featured-slider__navigation">
+								<div class="arrow featured__button-prev icon-card-btn-arrow"></div>
+								<div class="arrow featured__button-next icon-card-btn-arrow"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 		</main>
 
 		@@include("./chunk/footer.html")

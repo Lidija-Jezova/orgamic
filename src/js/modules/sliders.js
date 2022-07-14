@@ -30,4 +30,38 @@ new Swiper('.organic-slider', {
 	}
 });
 
+new Swiper('.featured__slider', {
+	// configure Swiper to use modules
+	modules: [Navigation, Pagination, Autoplay],
+	observer: true,
+	observeParents: true,
+	slidesPerView: 1,
+	loop: true,
+	spaceBetween: 30,
+	speed: 500,
+	autoplay: {
+		delay: 3000
+	},
+	navigation: {
+		nextEl: '.featured__button-next',
+		prevEl: '.featured__button-prev',
+	},
+	pagination: {
+		el: '.featured-slider__dots',
+		type: 'bullets',
+		clickable: true
+	},
+	breakpoints: {
+		320: {
+			slidesPerView: 1
+		},
+		767.98: {
+			slidesPerView: 2
+		},
+		991.98: {
+			slidesPerView: 3
+		}
+	}
+});
+
 

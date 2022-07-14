@@ -102,13 +102,6 @@
 	// .categories-card__fake
 
 	&__fake {
-		width: 40px;
-		height: 40px;
-		border: 1px solid $color-brand-1;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		color: $color-brand-1;
 	}
 
 	&:hover &__fake {

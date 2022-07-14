@@ -4,6 +4,22 @@
 	grid-template: minmax(340px, auto) 1fr/1fr;
 	position: relative;
 
+	// .product-item____discount
+
+	&__discount {
+		width: 60px;
+		min-height: 25px;
+		padding: 5px;
+		font-size: rem(12px);
+		font-weight: 600;
+		color: $color-white;
+		position: absolute;
+		left: 0;
+		top: 15px;
+		background-color: $color-brand-2;
+		text-align: center;
+	}
+
 	// .product-item__actions
 
 	&__actions {
@@ -119,6 +135,13 @@
 		text-align: center;
 		color: $color-brand-1;
 
+		span {
+			font-size: rem(14px);
+			font-weight: 500;
+			text-decoration: line-through;
+			color: $color-gray-dark;
+		}
+
 		&:not(:last-child) {
 			margin-bottom: 10px;
 		}
@@ -135,6 +158,4 @@
 	}
 }
 
-.star-rating {
-	
-}
+.star-rating {}
