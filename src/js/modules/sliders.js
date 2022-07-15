@@ -3,7 +3,7 @@ import Swiper, { Navigation, Pagination, Autoplay } from 'swiper';
 // import Swiper and modules styles
 import 'swiper/css';
 import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+// import 'swiper/css/pagination';
 
 
 // init Swiper:
@@ -64,4 +64,21 @@ new Swiper('.featured__slider', {
 	}
 });
 
+new Swiper('.testimonials-slider', {
+	// configure Swiper to use modules
+	modules: [Pagination, Autoplay],
+	observer: true,
+	observeParents: true,
+	slidesPerView: 1,
+	loop: true,
+	speed: 500,
+	autoplay: {
+		delay: 3000
+	},
+	pagination: {
+		el: '.testimonials-slider__dots',
+		type: 'bullets',
+		clickable: true
+	}
+});
 

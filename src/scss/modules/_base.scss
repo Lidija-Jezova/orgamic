@@ -80,11 +80,12 @@ body {
 }
 
 .slider-dots {
+	width: 100%;
 	height: 10px;
 	display: inline-flex;
-	gap: 20px;
-	position: absolute;
+	gap: 10px;
 	justify-content: center;
+	position: absolute;		
 
 	.swiper-pagination-bullet {
 		height: 10px;
