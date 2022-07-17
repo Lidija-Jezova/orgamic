@@ -1,0 +1,180 @@
+.footer {
+
+	margin-top: -120px;
+	background-color: $color-dark;
+
+	// .footer__top
+
+	&__top {
+		padding: 220px 0 60px;
+		color: $color-gray-neutral;
+	}
+
+	// .footer__bottom
+
+	&__bottom {}
+}
+
+.footer-top {
+
+	// .footer-top__container
+
+	&__container {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+		gap: 30px;
+	}
+
+	// .footer-top__orgamic
+
+	&__orgamic {}
+
+	// .footer-top__menu
+
+	&__menu {}
+
+	// .footer-top__title
+
+	&__title {
+		display: inline-block;
+		font-family: 'Oswald';
+		font-weight: 600;
+		font-size: rem(24px);
+		line-height: 1.4;
+		color: $color-white;
+
+		&:not(:last-child) {
+			margin-bottom: 34px;
+		}
+	}
+
+	// .footer-top__blog
+
+	&__blog {}
+
+	// .footer-top__info
+
+	&__info {}
+}
+
+.footer-top-orgamic {
+
+	// .footer-top-orgamic__logo
+
+	&__logo {}
+
+	// .footer-top-orgamic__content
+
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+	}
+
+	// .footer-top-orgamic__text
+
+	&__text {}
+
+	// .footer-top-orgamic__socials
+
+	&__socials {
+		display: flex;
+		gap: 30px;
+	}
+
+	// .footer-top-orgamic__social
+
+	&__social {}
+}
+
+.footer-top-menu {
+
+	// .footer-top-menu__list
+
+	&__list {}
+
+	// .footer-top-menu__item
+
+	&__item {}
+
+	// .footer-top-menu__link
+
+	&__link {}
+}
+
+.footer-top-blog {
+
+	// .footer-top-blog__items
+
+	&__items {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	// .footer-top-blog__item
+
+	&__item {
+		display: flex;
+		gap: 14px;
+	}
+
+	// .footer-top-blog__img
+
+	&__img {
+		position: relative;
+		width: 70px;
+		height: 70px;
+	}
+
+	// .footer-top-blog__content
+
+	&__content {}
+
+	// .footer-top-blog__title
+
+	&__title {}
+
+	// .footer-top-blog__date
+
+	&__date {}
+}
+
+.footer-top-info {
+
+	// .footer-top-info__content
+
+	&__content {}
+
+	// .footer-top-info__links
+
+	&__links {}
+
+	// .footer-top-info__link
+
+	&__link {}
+
+	// .footer-top-info__hours
+
+	&__hours {}
+
+	// .footer-top-info__title
+
+	&__title {}
+
+	// .footer-top-info__text
+
+	&__text {}
+}
+
+.footer-bottom {
+
+	// .footer-bottom__container
+
+	&__container {}
+
+	// .footer-bottom__copyright
+
+	&__copyright {}
+}

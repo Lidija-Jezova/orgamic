@@ -40,7 +40,7 @@
 	&__img {
 		position: absolute;
 		left: -5%;
-		top: -12%;
+		top: -16%;
 		width: 38%;
 		height: 128%;
 
@@ -92,7 +92,7 @@
 
 	&__content {
 		&>*:not(:last-child) {
-			margin-bottom: 25px;
+			margin-bottom: 35px;
 
 			@media (max-width: $breakpoint480) {
 				margin-bottom: 20px;
